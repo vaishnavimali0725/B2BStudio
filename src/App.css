@@ -1,0 +1,29 @@
+@keyframes shine {
+  0% { transform: translateX(-100%) skewX(-12deg); }
+  100% { transform: translateX(200%) skewX(-12deg); }
+}
+
+.animate-shine {
+  animation: shine 3s infinite;
+}
+
+/* Custom gradient animations */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+/* App.css */
+.main-content {
+  margin-top: 80px; /* Adjust based on your navbar height */
+}
+
+/* Ensure no horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
